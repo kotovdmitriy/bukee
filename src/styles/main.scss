@@ -28,6 +28,10 @@ body {
     padding-bottom: 155px;
 }
 
+.page {
+    padding-top: 161px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -75,6 +79,10 @@ body {
         font-size: 18px;
         letter-spacing: 0.8px;
         margin-bottom: 30px;
+    }
+    &__name-top {
+        margin-top: 16px;
+        margin-left: 0;
     }
     &__title {
         margin-bottom: 40px;
@@ -127,5 +135,23 @@ body {
         background-image: url(../img/book.svg);
         background-repeat: no-repeat;
         flex-basis: 445px;
+    }
+}
+.block-author {
+    display: flex;
+    justify-content: space-between;
+}
+.block-ava {
+    position: relative;
+    margin-right: -55px;
+    margin-top: 8px;
+    &__svg {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    &__img {
+        margin-top: 47px;
+        margin-right: 44px;
     }
 }

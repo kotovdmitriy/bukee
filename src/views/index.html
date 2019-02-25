@@ -16,7 +16,7 @@
 		<link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
 		<link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|Roboto+Slab:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="../styles/main.css">
 	</head>
 	<body>
@@ -61,19 +61,30 @@
 	
 	<div class="page">
 		<div class="wrap">
-			<div class="block-text">
-				<p class="block-text__name">- Book Author</p>
-				<h3 class="block-text__title">Emma Anderson <span>A room without books is like a body without a soul</span></h3>
-				<p class="block-text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-					magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-				<p class="block-text__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-				<a href="#" class="block-text__btn">Read full biography</a>
-			</div>
-			<div class="block-avatar">
-				<div></div>
+			<div class="block-author">
+				<div class="block-text">
+					<p class="block-text__name block-text__name-top">- Book Author</p>
+					<h2 class="block-text__title">Emma Anderson <span>A room without books is like a body without a soul</span></h2>
+					<p class="block-text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+						ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					<p class="block-text__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur.
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Sed ut</p>
+					<a href="#" class="block-text__btn">Read full biography</a>
+				</div>
+				<div class="block-ava">
+					<svg class="block-ava__svg" width="435" height="558">
+						<linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="558">
+							<stop offset="0" style="stop-color:#446a87" />
+							<stop offset="1" style="stop-color:#59c2ae" />
+						</linearGradient>
+						<rect width="435" height="558" x="0" y="0" fill="url(#gradient)"></rect>
+					</svg>
+					<img class="block-ava__img" src="../img/avatar.gif" alt="аватарка">
+				</div>
 			</div>
 			<div class="block-counter">
 				<p><span>12</span>Total published books</p>
