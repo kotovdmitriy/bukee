@@ -18,6 +18,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:100,400,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		<link rel="stylesheet" href="../styles/main.css">
 	</head>
 	<body>
@@ -194,6 +195,53 @@
 
 	<div class="page">
 		<div class="wrap">
+
+			<div class="block-carousel">
+				<div>
+					<div class="block-carousel-ava">
+						<div class="block-carousel-thumb">
+							<img src="img/feedback.png" alt="photo">
+						</div>
+						<span class="block-carousel-bq"></span>
+					</div>
+					
+					<h3>Kate Dennings</h3>
+					<p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
+					<p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+				</div>
+
+				<div>
+					<div class="block-carousel-ava">
+						<div class="block-carousel-thumb">
+							<img src="img/feedback.png" alt="photo">
+						</div>
+						<span class="block-carousel-bq"></span>
+						</div>
+						<h3>Kate Dennings</h3>
+						<p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
+						<p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					</div>
+
+					<div>
+							<div class="block-carousel-ava">
+								<div class="block-carousel-thumb">
+									<img src="img/feedback.png" alt="photo">
+								</div>
+								<span class="block-carousel-bq"></span>
+							</div>
+							<h3>Kate Dennings</h3>
+							<p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
+							<p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+						</div>
+
+				
+
+			</div>
+		</div>
+	</div>
+
+	<div class="page">
+		<div class="wrap">
 			<div class="block-author">
 
 					<div class="block-ava">
@@ -317,6 +365,18 @@
 			</div>
 		</div>
 
+
+		
 		<script src="../js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.block-carousel').slick({
+					dots: true,
+					arrows: false,
+				});
+			});
+		</script>
 	</body>
 </html>
