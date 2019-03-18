@@ -58,7 +58,7 @@
 					<p class="block-text__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						Sed ut</p>
-					<a href="#" class="block-text__btn">Buy this book - $15.00</a>
+					<a href="#" class="block-text__btn block-text__btn--main">Buy this book - $15.00</a>
 					<small>* Some conditions may applicable</small>
 				</div>
 			</div>
@@ -136,7 +136,19 @@
 						<li>Consectetur adipisicing elit</li>
 						<li>Labore et dolore magna</li>
 					</ol>
-					<button class="block-about-table__btn">More</button>
+					<ol class="block-about-table__list block-about-table__list_next" id="nextContentsList" style="display: none;">
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+					</ol>
+					<button id="nextContents" class="block-about-table__btn">More</button>
 				</div>
 			</div>
 		</div>
@@ -236,7 +248,7 @@
 
 	<div class="page">
 		<div class="wrap">
-			<div class="block-author">
+			<div class="block-author block-author--up">
 					<div class="block-ava">
 						<svg class="block-ava__svg block-ava__svg--left" width="435" height="704">
 							<linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="704">
@@ -245,7 +257,7 @@
 							</linearGradient>
 							<rect width="435" height="704" x="0" y="0" fill="url(#gradient)"></rect>
 						</svg>
-						<img class="block-ava__img block-ava__img--left" src="../img/emma.png" alt="аватарка">
+						<img class="block-ava__img block-ava__img--left block-ava__img--center" src="../img/emma.png" alt="аватарка">
 					</div>
 
 				<div class="block-text block-text--width">
@@ -369,6 +381,10 @@
 					dots: true,
 					arrows: false,
 				});
+			});
+			$("#nextContents").click(function(){
+				$("#nextContentsList").fadeIn();
+				$("#nextContents").hide();
 			});
 		</script>
 	</body>
