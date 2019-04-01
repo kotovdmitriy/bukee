@@ -145,12 +145,15 @@ body {
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
 		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
+				flex-wrap: wrap;
+		@media(max-width: 920px) {
+			padding-left: 0;
+		}
 		@media(max-width: 768px) {
 			-webkit-box-pack: center;
 			    -ms-flex-pack: center;
 			        justify-content: center;
-			padding: 0;
+			padding-right: 0;
 		}
 		font-family: 'Open Sans', serif;
 		&__item {
@@ -177,7 +180,9 @@ body {
 .block-text {
 	-ms-flex-preferred-size: calc(93% - 360px);
 			flex-basis: calc(93% - 360px);
-			margin-left: 20px;
+	&--ml {
+		margin-left: 40px;
+	}
 	@media(max-width: 1020px) {
 		-ms-flex-preferred-size: calc(93% - 315px);
 		    flex-basis: calc(93% - 315px);
@@ -393,7 +398,6 @@ body {
 }
 .block-ava {
   position: relative;
-  margin-right: -55px;
 	margin-top: 8px;
 	@media(max-width: 700px) {
 		margin: 8px auto 0;
